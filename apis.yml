@@ -1,7 +1,27 @@
 aid: jiobit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jiobit.png
 name: Jiobit
-description: Jiobit is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Jiobit is a real-time GPS tracking device company owned by Life360, based in San
+  Mateo, California. Its lightweight (18g) wearable tracker is designed for kids,
+  pets, seniors, and adults, combining LPWA CatM1 cellular, GPS, WiFi, and BLE for
+  location accuracy of 1-50 feet, up to 30 days of battery life, geofence and SOS/911
+  emergency alerts, and tamper-proof, government-level encryption. Jiobit is a
+  consumer hardware and mobile-app product sold direct-to-consumer with a monthly
+  connectivity subscription; it publishes no public developer API, SDK, or developer
+  portal. This profile is maintained in the API Evangelist network for company
+  discovery and monitoring.
 url: https://raw.githubusercontent.com/api-evangelist/jiobit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- GPS Tracking
+- Location
+- Wearables
+- IoT
+- Consumer Hardware
+- Family Safety
+- Pet Tracking
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jiobit-domain-security.yml
 - type: Website
-  url: https://jiobit.com/
+  url: https://www.jiobit.com/
+- type: Blog
+  url: https://www.jiobit.com/blog
+- type: Support
+  url: https://tileteam.zendesk.com/hc/en-us/
+- type: PrivacyPolicy
+  url: https://www.jiobit.com/legal/jio-inc-online-privacy-policy
+- type: TermsOfService
+  url: https://www.jiobit.com/legal/jio-inc-terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
